@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form_4</title>
+
+    <style>
+        table {
+            background-color: yellow;
+            width: 100%;
+        }
+
+        label {
+            margin-left: 10px;
+        }
+
+        .titleTable {
+            background-color: aquamarine;
+            color: blue;
+            font-size: 42px;
+        }
+
+        label {
+            font-size: 24px;
+            color: dodgerblue;
+        }
+
+        input, button, textarea {
+            box-shadow: -2px -2px #888888;
+        }
+
+        option {
+            height: 32px;
+        }
+
+        span, select, button {
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="3" class="titleTable">ĐĂNG KÝ SINH VIÊN</td>
+        </tr>
+        <tr>
+            <td>
+                <label for="name">Họ và tên</label>
+            </td>
+            <td colspan="2">
+                <input type="text" id="name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="birthday">Ngày sinh</label>
+            </td>
+            <td colspan="2"><input type="text" id="birthday"></td>
+        </tr>
+        <tr>
+            <td><label>Giới tính</label></td>
+            <td>
+                <span>Nam</span>
+                <input type="radio" id="male" name="sex" class="radio">
+                <span>Nữ</span>
+                <input type="radio" id="female" name="sex" class="radio">
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="address">Địa chỉ</label>
+            </td>
+            <td colspan="2">
+                <textarea name="address" id="address" cols="30" rows="2"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Lớp</label>
+            </td>
+            <td>
+                <select>
+                    <option>--Chọn lớp--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Email</label></td>
+            <td colspan="2">
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td><label>Điện thoại</label></td>
+            <td colspan="2">
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Đăng ký</button>
+                <button type="reset">Nhập lại</button>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

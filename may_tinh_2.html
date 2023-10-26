@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nang cao may tinh</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td colspan="4"><input type="text" id="src"></td>
+    </tr>
+    <tr>
+        <td><button onclick="hien('(')">(</button></td>
+        <td><button onclick="hien('(')">(</button></td>
+        <td><button onclick="hien('%')">%</button></td>
+        <td><button type="reset" onclick="xoa()" >AC</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="hien('7')">7</button></td>
+        <td><button onclick="hien('8')">8</button></td>
+        <td><button onclick="hien('9')">9</button></td>
+        <td><button onclick="hien('/')">/</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="hien('4')">4</button></td>
+        <td><button onclick="hien('5')">5</button></td>
+        <td><button onclick="hien('6')">6</button></td>
+        <td><button onclick="hien('*')">x</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="hien('1')">1</button></td>
+        <td><button onclick="hien('2')">2</button></td>
+        <td><button onclick="hien('3')">3</button></td>
+        <td><button onclick="hien('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="hien('0')">0</button></td>
+        <td><button onclick="hien('.')">.</button></td>
+        <td><button onclick="kq()">=</button></td>
+        <td><button onclick="hien('+')">+</button></td>
+    </tr>
+</table>
+
+<script>
+
+    let src = document.getElementById('src')
+    function hien(x) {
+        src.value += x;
+    }
+
+    function xoa() {
+        src.value = '';
+    }
+
+    function kq() {
+        src.value = eval(src.value);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sở thích của bạn</title>
+    <style>
+        h1 {
+            text-transform: uppercase;
+            color: white;
+            font-weight: 400;
+            font-size: 40px;
+            margin: 2px;
+        }
+
+        th {
+            background-color: orangered;
+        }
+
+        table {
+            width: 90%;
+        }
+
+        label {
+            color: blue;
+            font-size: 22px;
+        }
+
+        input {
+            box-shadow: -2px -2px #888888;
+        }
+
+        span {
+            color: orange;
+            font-size: 22px;
+        }
+
+        button {
+            box-shadow: 2px 2px #888888;
+            padding: 0 5px;
+            font-size: 22px;
+        }
+        label {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <table cellpadding="10">
+            <tr>
+                <th colspan="4"><h1>Sở thích của bạn</h1></th>
+            </tr>
+
+            <tr>
+                <td><label for="name">Họ và tên</label></td>
+                <td colspan="3"><input type="text" style="width: 900px; height: 32px" name="name" id="name" /></td>
+
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td colspan="3"><input type="email" style="width: 600px; height: 32px" id="email" /></td>
+            </tr>
+
+            <tr>
+                <td><label>Sở thích</label></td>
+                <td>
+                    <input type="checkbox">
+                    <span>Thể thao</span>
+                </td>
+                <td>
+                    <input type="checkbox">
+                    <span>Thể thao</span>
+                </td>
+                <td>
+                    <input type="checkbox">
+                    <span>Thể thao</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox">
+                    <span>Thể thao</span>
+                </td>
+                <td>
+                    <input type="checkbox">
+                    <span>Thể thao</span>
+                </td>
+                <td>
+                    <input type="checkbox">
+                    <span>Thể thao</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="checkbox">
+                    <span>Thể thao</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <button type="submit">Gửi thông tin</button>
+                    <button type="reset">Nhập lại</button>
+                </td>
+            </tr>
+
+
+        </table>
+    </center>
+
+</body>
+
+</html>

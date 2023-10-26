@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Di chuyen</title>
+</head>
+<body>
+<img src="https://i.pinimg.com/originals/2f/5a/d2/2f5ad2bb24fde7148466640808ca34cb.png" alt="anh doremon" style="width: 200px; position: relative; top: 0; left: 0" id="doremon">
+
+<script>
+    let anh = document.getElementById('doremon');
+    let vanToc = 10;
+    setInterval(() => {
+        anh.style.left = parseInt(anh.style.left) + vanToc + 'px';
+        if(parseInt(anh.style.left) > window.innerWidth-200 || parseInt(anh.style.left) < 0) {
+            vanToc = -vanToc;
+        }
+    }, 10)
+</script>
+</body>
+</html>
