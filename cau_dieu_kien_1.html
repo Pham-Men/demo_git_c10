@@ -111,6 +111,84 @@
     //     soLan = (soLuong - soLuong % 9) / 9 + 1
     // )
     // alert(soLan);
+
+    //Bai 9: Tinh dien tich hinh chu nhat
+
+    // let a = prompt('a');
+    // let b = prompt('b');
+    //
+    // let s = a*b;
+    //
+    // alert('Dien tich hinh chu nhat la: ' + s);
+
+    //Bai 10: Kiem tra 1 so co phai la so nguyen tu 0 => 120 khong
+
+    // let a = prompt('a');
+    //
+    // if(a % 1 === 0 && a >= 0 && a <= 120) {
+    //     alert(a + ' la tuoi nguoi');
+    // } else {
+    //     alert(a + ' khong phai tuoi nguoi');
+    // }
+
+    //Bai 11: Giai phuong trinh can bac 1
+
+    // let a = +prompt('a');
+    // let b = +prompt('b');
+    //
+    // if(a === 0) {
+    //     if(b === 0) {
+    //     alert('Phuong trinh vo so nghiem');
+    //     } else {
+    //         alert('Phuong trinh vo nghiem')
+    //     }
+    // } else {
+    //     let x = b/a;
+    //     alert('phuong trinh co nghiem la: ' + x);
+    // }
+
+    //Bai 12: Giai phuong trinh bac 2
+
+    // let a = +prompt('a');
+    // let b = +prompt('b');
+    // let c = +prompt('c');
+    //
+    // let anPha = b*b - 4*a*c;
+    //
+    // if(anPha < 0) {
+    //     alert('Phuong trinh vo nghiem');
+    // } else if (anPha === 0) {
+    //     alert('Phuong trinh co nghiem: ' + -b/2*a);
+    // } else {
+    //     alert('Phuong trinh co 2 nghiem: ' + (-b + Math.sqrt(anPha))/2*a + 'va' + (-b - Math.sqrt(anPha))/2*a);
+    // }
+
+    //Bai 13: Tinh lai suat ngan hang
+
+    // let soTien = +prompt('So tien');
+    // let laiSuat = +prompt('Lai suat');
+    // let soNgay = +prompt('So ngay');
+    //
+    // let soTienLai = soTien * laiSuat * soNgay/365;
+    //
+    // alert('So tien lai la: ' + soTienLai);
+
+    //Bai 14: Tinh gia dien
+
+    let soDien = +prompt('So dien');
+    let tienDien;
+
+    if(soDien <= 50) {
+        tienDien = soDien * 200;
+    } else if(soDien > 50 && soDien <= 100) {
+        tienDien = 50 * 200 + (soDien - 50) * 250;
+    } else if(soDien > 100 && soDien <= 200) {
+        tienDien = 50 * 200 + 50 * 250 + (soDien - 100) * 300;
+    } else {
+        tienDien = 50 * 200 + 50 * 250 + 100 * 300 + (soDien - 200) * 350;
+    }
+
+    alert('So tien dien phai tra la: ' + tienDien);
 </script>
 
 </body>

@@ -12,8 +12,21 @@
     let vanToc = 10;
     setInterval(() => {
         anh.style.left = parseInt(anh.style.left) + vanToc + 'px';
-        if(parseInt(anh.style.left) > window.innerWidth-200 || parseInt(anh.style.left) < 0) {
-            vanToc = -vanToc;
+        // if(parseInt(anh.style.left) > window.innerWidth-200 || parseInt(anh.style.left) < 0) {
+        //     vanToc = -vanToc;
+        // }
+
+        if(parseInt(anh.style.left) > window.innerWidth-200) {
+            anh.style.left = window.innerWidth-200 + 'px';
+            anh.style.top = parseInt(anh.style.top) + vanToc + 'px';
+            if(parseInt(anh.style.top) > window.innerHeight-200) {
+                anh.style.top = window.innerHeight-200 + 'px';
+                vanToc = -vanToc;
+                if(parseInt(anh.style.left) < 0) {
+                    anh.style.left = 0 + 'px';
+                    anh.style.top = parseInt(anh.style.top) + vanToc + 'px';
+                }
+            }
         }
     }, 10)
 </script>
